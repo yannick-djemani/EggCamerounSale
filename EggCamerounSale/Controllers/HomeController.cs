@@ -6,6 +6,10 @@ namespace EggCamerounSale.Controllers
 {
     public class HomeController : Controller
     {
+        /// <summary>
+        /// Returns the default view for the controller.
+        /// </summary>
+        /// <returns>An IActionResult that renders the default view associated with the controller.</returns>
         public IActionResult Index()
         {
             return View();
