@@ -4,6 +4,13 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationInsightsResourceId>/subscriptions/c8ae29d3-a36a-4d93-8d5a-bde5f7841e99/resourceGroups/az-course-rg/providers/microsoft.insights/components/EggCamerounSale</ApplicationInsightsResourceId>
+    <UserSecretsId>e0335ad4-366c-4b5c-9c55-e5b4bd4401d3</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.17.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.23.0" />
+  </ItemGroup>
 
 </Project>

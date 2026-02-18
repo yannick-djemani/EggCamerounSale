@@ -6,12 +6,18 @@ namespace EggCamerounSale.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IConfiguration _configuration;
+        public HomeController(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
         /// <summary>
         /// Returns the default view for the controller.
         /// </summary>
         /// <returns>An IActionResult that renders the default view associated with the controller.</returns>
         public IActionResult Index()
         {
+            ViewData["Greeting"] = _configuration["Greeting"];
             return View();
         }
 
